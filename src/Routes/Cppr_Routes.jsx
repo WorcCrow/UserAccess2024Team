@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 //Lazy-loaded components
-const CommonIssue = lazy(() => import("Views/CommonProblem/Mistake1/LayoutScripts/Cppl_CommonIssue"));
+const CommonIssue = lazy(() => import("Views/CommonProblem/CommonIssue/LayoutScripts/Cppl_CommonIssue"));
 
 const Loading = () => {
    return (

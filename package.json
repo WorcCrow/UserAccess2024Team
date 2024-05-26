@@ -2,7 +2,7 @@
    "name": "useraccess2024team",
    "version": "0.1.0",
    "private": true,
-   "homepage": "/companalyst/cloud/useraccess2024team",
+   "homepage": "/companalyst/cloud/useraccess2024team/common-issue",
    "dependencies": {
       "@grapecity/spread-excelio": "^17.0.4",
       "@grapecity/spread-sheets": "^17.0.4",
@@ -72,6 +72,5 @@
    },
    "devDependencies": {
       "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
-   },
-   "proxy": "https://salarystaging58.castage.salary.com/companalyst/cloud/CompPlanning/"
+   }
 }
