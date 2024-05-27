@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { Button, ListGroup, Modal } from "react-bootstrap";
+import { useState } from "react";
+import { Button, Modal } from "react-bootstrap";
 
 export const DirectlyModifyingStateModal = ({ HideModal }) => {
    const [intCounter, SetCounter] = useState(10);
