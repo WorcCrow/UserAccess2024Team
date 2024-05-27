@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from 'react-bootstrap';
+import { Container } from "react-bootstrap";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import RouterComponent from "./Routes/Cppr_Routes";
@@ -13,15 +13,15 @@ const CPPUrlPath = "/companalyst/cloud/useraccess2024team";
 
 const Root = ReactDOM.createRoot(document.getElementById("root"));
 const RootContainer = () => {
-    return (
-        <Container>
-            <RouterComponent />
-        </Container>
-    )
+  return (
+    // <Container>
+    <RouterComponent />
+    // </Container>
+  );
 };
 
 Root.render(
-   <BrowserRouter basename={`${CPPUrlPath}`} >
-      <RootContainer />
-   </BrowserRouter>
+  <BrowserRouter basename={`${CPPUrlPath}`}>
+    <RootContainer />
+  </BrowserRouter>
 );
