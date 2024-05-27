@@ -38,12 +38,12 @@ const NestedTernary = () => {
    return (
       <div className="d-flex justify-content-center">
          <div className="w-50 d-flex flex-column gap-3">
-            <Button variant="warning" onClick={ShowIssue1}>Directly Modifying State</Button>
-            <Button variant="warning" onClick={ShowIssue2}>Not Handling Side Effect Properly</Button>
-            <Button variant="warning" onClick={ShowIssue3}>Not Handling Side Effect Properly2</Button>
-            <Button variant="warning" onClick={ShowIssue4}>Incorrectly Update State</Button>
-            <Button variant="warning" onClick={ShowIssue5}>Expensive Render</Button>
-            <Button variant="warning" onClick={ShowIssue6}>Not Cleaning Side Effect</Button>
+            <Button variant="warning" className="icon-sa-preview" onClick={ShowIssue1}>Directly Modifying State</Button>
+            <Button variant="warning" className="icon-sa-preview" onClick={ShowIssue2}>Not Handling Side Effect Properly</Button>
+            <Button variant="warning" className="icon-sa-preview" onClick={ShowIssue3}>Not Handling Side Effect Properly2</Button>
+            <Button variant="warning" className="icon-sa-preview" onClick={ShowIssue4}>Incorrectly Update State</Button>
+            <Button variant="warning" className="icon-sa-preview" onClick={ShowIssue5}>Expensive Render</Button>
+            <Button variant="warning" className="icon-sa-preview" onClick={ShowIssue6}>Not Cleaning Side Effect</Button>
          </div>
          {
             bolIssue1 ? <DirectlyModifyingStateModal HideModal={HideIssue1} /> :

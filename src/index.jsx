@@ -9,6 +9,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./Styles/Cpps_ElementStyles.scss";
 const CPPUrlPath = "/companalyst/cloud/useraccess2024team";
 
 const Root = ReactDOM.createRoot(document.getElementById("root"));
