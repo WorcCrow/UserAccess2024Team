@@ -16,13 +16,13 @@ export default function Cppe_LT_PayExportPage() {
       <div class="container ">
         <div class="row gx-5" style={{ padding: 0 }}>
           <h1 className="welcome-label">Welcome Ted!</h1>
-          <div class="col-4 ">
+          <div class="col-4">
             <div className="row gy-3">
               <UserInfo />
               <HelpfulLink />
             </div>
           </div>
-          <div class="col-8">
+          <div class="col">
             <ExportList />
           </div>
         </div>
