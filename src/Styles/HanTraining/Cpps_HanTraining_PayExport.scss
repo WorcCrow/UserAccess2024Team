@@ -1,0 +1,149 @@
+.float-right {
+  float: right;
+}
+
+.pr-15px {
+  padding-right: 15px;
+}
+
+.logo-section {
+  .logo {
+    padding-bottom: 20px;
+  }
+}
+
+.circle {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  background: green;
+  border-radius: 50%;
+  color: white;
+}
+.circle span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.pay-export {
+  background-color: #2d469f;
+}
+
+.btn-sign-out {
+  border-radius: 22px;
+  color: #4376b7;
+  font-weight: 600;
+}
+
+.edit-profile {
+  a {
+    font-size: 16px;
+    color: blue;
+    font-weight: 700;
+  }
+}
+
+.row {
+  .user-info {
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 10px;
+  }
+}
+
+.user-section {
+  display: grid;
+
+  .name {
+    font-weight: 700;
+  }
+
+  .company-name {
+    font-size: 14px;
+  }
+}
+
+.welcome {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.section {
+  padding: 20px 20px 0 20px;
+}
+
+.edit-profile {
+  text-align: center;
+}
+
+.helpful-links {
+  background: white;
+  border-radius: 10px;
+  margin-top: 10px;
+
+  .accordion-button:not(.collapsed) {
+    background-color: white;
+  }
+
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+}
+
+.accordion .card-header button {
+  border: none;
+}
+
+.accordion-button {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.text-blue {
+  color: #4376b7;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.list-helpful-link {
+  list-style: none;
+  padding: 0;
+
+  .icon {
+    padding-left: 10px;
+    padding-right: 0;
+  }
+
+  li {
+    padding-bottom: 10px;
+
+    a {
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    span {
+      font-size: 15px;
+    }
+  }
+}
+
+.pay-equity-export {
+  background: white;
+  border-radius: 10px;
+  min-height: 400px;
+}
