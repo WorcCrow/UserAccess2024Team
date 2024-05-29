@@ -1,0 +1,30 @@
+$color-075484: #075484;
+$color-007dbc: #007dbc;
+$color-fff: #fff;
+
+.btn-right-0 {
+  right: 0px;
+  position: absolute;
+}
+.text-blue {
+  color: $color-007dbc;
+}
+.bg-white {
+  background-color: $color-fff;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: $color-075484;
+}
+
+.container-fluid {
+  height: 100%;
+}
+
+.bg-primary {
+  background-color: #075484 !important;
+}
