@@ -9,7 +9,7 @@ export const NotHandlingSideEffectsProperly2Modal = ({ HideModal }) => {
   const [arrData, SetData] = useState([]);
   useEffect(() => {
     fetchTodo(SetData);
-  });
+  }, []);
   return (
     <Modal show={true} onHide={HideModal} centered>
       <Modal.Header closeButton>

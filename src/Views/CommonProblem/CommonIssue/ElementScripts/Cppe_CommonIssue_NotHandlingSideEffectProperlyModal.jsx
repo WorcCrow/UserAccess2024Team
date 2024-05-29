@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button, ListGroup, Modal } from "react-bootstrap";
 import { fetchTodo } from "UtilityScripts/Cppu_Common";
 
@@ -8,7 +8,9 @@ import { fetchTodo } from "UtilityScripts/Cppu_Common";
 export const NotHandlingSideEffectsProperlyModal = ({ HideModal }) => {
   const [arrData, SetData] = useState([]);
 
-  fetchTodo(SetData);
+  useEffect(() => {
+    fetchTodo(SetData);
+  }, []);
   return (
     <Modal show={true} onHide={HideModal} centered>
       <Modal.Header closeButton>
