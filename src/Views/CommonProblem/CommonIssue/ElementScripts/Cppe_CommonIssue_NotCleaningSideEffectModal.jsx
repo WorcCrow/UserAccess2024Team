@@ -9,7 +9,7 @@ export const NotCleaningSideEffect = ({ HideModal }) => {
   useEffect(() => {
     const intID = Math.floor(Math.random() * 100);
     const intervalID = setInterval(() => {
-      SetCount(intCount + 1);
+      SetCount((prevCount) => prevCount + 1);
       console.count(`It's counting, ID: ${intID}`);
     }, 1000);
 
