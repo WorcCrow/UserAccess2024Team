@@ -11,10 +11,9 @@ export const NotCleaningSideEffect = ({ HideModal }) => {
     let internalId = setInterval(() => {
       SetCount((prevCount) => prevCount + 1);
       console.count(`It's counting, ID: ${intID}`);
-      internalId = null;
     }, 1000);
     return function cleanup() {
-      internalId = null;
+      clearInterval(internalId);
     };
   }, [intCount]);
 

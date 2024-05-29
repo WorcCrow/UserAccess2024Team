@@ -6,7 +6,7 @@ const PayExport = () => {
   return (
     <div className="row">
       <div className="col-12 col-sm-3 left-panel">
-        <div className=" user-info">
+        <div className="user-info d-none d-sm-block">
           <UserInfo />
         </div>
         <div className="helpful-links">

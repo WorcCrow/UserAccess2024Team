@@ -9,7 +9,7 @@ export const NotHandlingSideEffectsProperly2Modal = ({ HideModal }) => {
   const [arrData, SetData] = useState([]);
   useEffect(() => {
     fetchTodo(SetData);
-  }, [arrData]);
+  }, []);
   return (
     <Modal show={true} onHide={HideModal} centered>
       <Modal.Header closeButton>
@@ -17,8 +17,8 @@ export const NotHandlingSideEffectsProperly2Modal = ({ HideModal }) => {
       </Modal.Header>
       <Modal.Body>
         <ListGroup>
-          {arrData.map((item) => (
-            <ListGroup.Item>
+          {arrData.map((item, index) => (
+            <ListGroup.Item key={index}>
               <b>{item.email}</b>
               <div>{item.body}</div>
             </ListGroup.Item>

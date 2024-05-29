@@ -11,7 +11,7 @@ export const NotHandlingSideEffectsProperlyModal = ({ HideModal }) => {
   useEffect(() => {
     fetchTodo(SetData);
     console.log("Handle side effect.");
-  }, arrData);
+  }, []);
 
   return (
     <Modal show={true} onHide={HideModal} centered>

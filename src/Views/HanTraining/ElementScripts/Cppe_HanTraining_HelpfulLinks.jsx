@@ -86,7 +86,7 @@ const HelpfulLinks = () => {
                         <span className="icon-sa-service"></span>
                       </div>
                       <div className="col-11">
-                        <span className="font-weight-600">Need Help?</span>
+                        <span className="font-weight-700">Need Help?</span>
                       </div>
                     </div>
                   </li>

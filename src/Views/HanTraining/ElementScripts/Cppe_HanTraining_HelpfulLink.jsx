@@ -1,4 +1,4 @@
-const HelpfulLink = (icon, title, href, textColor) => {
+const HelpfulLink = ({ icon, title, href, textColor }) => {
   return (
     <li>
       <div className="row">

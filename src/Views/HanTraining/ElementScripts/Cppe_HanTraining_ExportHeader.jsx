@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "Resources/images/Header_SalaryLogo.svg";
+import logo from "Resources/images/salary-logo-reversed.svg";
 
 const ExportHeader = () => {
   return (

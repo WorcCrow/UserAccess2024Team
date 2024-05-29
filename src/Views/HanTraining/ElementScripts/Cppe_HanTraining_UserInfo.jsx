@@ -14,9 +14,11 @@ const UserInfo = () => {
         </div>
       </div>
       <div className="col-8 user-section">
-        <span className="name">Ted Leonard, CCP</span>
-        <span className="position">CHRO</span>
-        <span className="company-name">Massive Dynamics Inc.</span>
+        <div className="user-position">
+          <span className="name">Ted Leonard, CCP</span>
+          <span>CHRO</span>
+          <span className="company-name">Massive Dynamics Inc.</span>
+        </div>
       </div>
     </div>
   );
