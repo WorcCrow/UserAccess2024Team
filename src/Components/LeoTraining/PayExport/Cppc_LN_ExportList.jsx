@@ -1,7 +1,31 @@
 import { useResponsive } from "UtilityScripts/Cppu_Common";
 import React from "react";
 
-const NewTag = () => {
+const EXPORT_LIST_DATA = [
+  {
+    label: "Pay Equity Executive View",
+    sharedBy: "Shared by: Ted Leonard",
+    sharedDate: "Shared on: 12/12/2021",
+    expireDate: "Expires on: 12/12/2022",
+    isNew: true,
+  },
+  {
+    label: "Pay Equity Export",
+    sharedBy: "Shared by: Ted Leonard",
+    sharedDate: "Shared on: 12/12/2021",
+    expireDate: "Expires on: 12/12/2022",
+    isNew: false,
+  },
+  {
+    label: "Pay Equity Executive View",
+    sharedBy: "Shared by: Ted Leonard",
+    sharedDate: "Shared on: 12/12/2021",
+    expireDate: "Expires on: 12/12/2022",
+    isNew: false,
+  },
+];
+
+export const NewTag = () => {
   return <span className="badge bg-warning rounded">New</span>;
 };
 
@@ -19,10 +43,31 @@ const Tooltip = ({ text, isWhite }) => {
   );
 };
 
-const Dropdown = () => {
+export const FilterDropdown = () => {
   const { isDesktop } = useResponsive();
 
-  if (!isDesktop) return null;
+  if (!isDesktop)
+    return (
+      <div className="d-flex align-items-center justify-content-end mb-3">
+        <span className="text-sm text-white me-3">FILTER BY DATE</span>
+        <div class="dropdown">
+          <span
+            class=" dropdown-toggle text-white fw-bold"
+            role="button"
+            id="dropdownMenuLink"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            All
+          </span>
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li>This month</li>
+            <li>Last month</li>
+          </ul>
+        </div>
+      </div>
+    );
 
   return (
     <div className="d-flex justify-content-between filter-dropdown">
@@ -61,16 +106,16 @@ const Dropdown = () => {
   );
 };
 
-const ExportItem = () => {
+const ExportItem = ({ label, sharedBy, sharedDate, expireDate, isNew }) => {
   return (
     <div class="rounded border my-3 p-3 export-item" aria-current="true">
       <div>
         <h5 class="mb-1">
-          List group item heading <NewTag />
+          {label} {isNew && <NewTag />}
         </h5>
-        <span class="text-muted">Shared today</span>{" "}
-        <span class="text-muted mx-4">Shared by LeoNguyen</span>{" "}
-        <span class="text-muted">Expired August 23, 2022</span>
+        <span class="text-muted">{sharedDate}</span>{" "}
+        <span class="text-muted mx-4">{sharedBy}</span>{" "}
+        <span class="text-muted">{expireDate}</span>
       </div>
       <div>
         <button
@@ -96,11 +141,11 @@ export default function ExportList() {
       )}
       <div class="d-flex align-items-center justify-content-between  w-100">
         <h3 className="m-0 fs-6 fw-bold">Pay Equity Export Shared With You</h3>
-        <Dropdown />
+        {isDesktop && <FilterDropdown />}
       </div>
-      <ExportItem />
-      <ExportItem />
-      <ExportItem />
+      {EXPORT_LIST_DATA.map((item) => (
+        <ExportItem {...item} />
+      ))}
     </div>
   );
 }

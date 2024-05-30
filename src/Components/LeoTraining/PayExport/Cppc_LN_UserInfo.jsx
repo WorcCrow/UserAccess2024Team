@@ -5,7 +5,7 @@ export default function UserInfo() {
     <div className="card">
       <div class="card-body">
         <div className="row">
-          <div className="col-4 d-flex flex-column align-items-center">
+          <div className="col-4 d-flex flex-column align-items-center justify-content-center">
             <div className="userinfo_avt-container">
               <span className="userinfo_avt-text">TL</span>
             </div>
