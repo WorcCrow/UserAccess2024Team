@@ -26,7 +26,7 @@ export default function HelpfulLink() {
           <Image
             height={32}
             width={32}
-            style={{ borderRadius: "50%", marginRight: 8, marginLeft: 32 }}
+            className="rounded-circle ms-4 me-2"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP6nVahvfvPx_pIFW2StOIMEK8TqCDdtzwow&s"
           />
           Contact your HR Adminstrator

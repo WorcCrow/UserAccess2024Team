@@ -14,6 +14,7 @@ export const ExpensiveRender = ({ HideModal }) => {
   const [intCount, SetCount] = useState(0);
   const [intRange, SetRange] = useState(1000000000);
 
+  // Issue: Expensive Render
   const intTotal = useMemo(() => ExpensiveCalculation(intRange), [intRange]);
 
   return (
