@@ -6,7 +6,7 @@ const HelpfulLink = ({ icon, title, href, textColor }) => {
           <span className={icon}></span>
         </div>
         <div className="col-11">
-          <a className="text-blue font-weight-600" href={href}>
+          <a className={`font-weight-600 ${textColor}`} href={href}>
             {title}
           </a>
         </div>

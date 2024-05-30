@@ -9,8 +9,12 @@ const UserInfo = () => {
             </div>
           </div>
         </div>
-        <div className="edit-profile text-blue">
-          <a>Edit Profile</a>
+        <div className="row">
+          <div className="col-12">
+            <div className="edit-profile text-blue">
+              <a>Edit Profile</a>
+            </div>
+          </div>
         </div>
       </div>
       <div className="col-8 user-section">

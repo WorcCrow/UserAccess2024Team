@@ -26,7 +26,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  font-size: 38px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -42,7 +42,7 @@
 
 .edit-profile {
   a {
-    font-size: 14px;
+    font-size: 12px;
     color: blue;
     font-weight: 700;
   }
@@ -50,7 +50,7 @@
 
 .row {
   .user-info {
-    padding: 10px 20px;
+    padding: 10px;
     background-color: white;
     border-radius: 10px;
   }
@@ -59,6 +59,7 @@
 .user-section {
   display: flex;
   align-items: center;
+  padding: 0;
 }
 
 .user-position {
@@ -118,6 +119,10 @@
   color: #4376b7;
 }
 
+.text-black {
+  color: black;
+}
+
 .font-weight-600 {
   font-weight: 600;
 }
@@ -136,6 +141,7 @@
   }
 
   li {
+    word-wrap: break-word;
     padding-bottom: 10px;
 
     a {
@@ -206,10 +212,6 @@
 }
 
 @media screen and (max-width: 766px) {
-  .left-panel {
-    padding-bottom: 20px;
-  }
-
   .equity-export-button {
     margin-left: 0 !important;
   }
@@ -232,6 +234,57 @@
       font-size: 16px;
     }
   }
+
+  .user-logo-mobile {
+    width: 20% !important;
+    padding-bottom: 20% !important;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 767px) {
+  .circle span {
+    font-size: 21px !important;
+  }
+
+  .equity-export-button {
+    margin-left: 0 !important;
+  }
+
+  .view-export {
+    padding-top: 20px;
+  }
+
+  .left-panel {
+    padding-bottom: 20px;
+  }
+
+  .user-logo-mobile {
+    width: 15% !important;
+    padding-bottom: 15% !important;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+  .circle {
+    span {
+      font-size: 21px !important;
+    }
+  }
+
+  .equity-export-button {
+    .btn.btn-success {
+      padding: 0 5px !important;
+    }
+  }
+
+  .pay-equity-export-title h4 {
+    font-size: 20px;
+  }
+
+  .user-logo-mobile {
+    width: 15% !important;
+    padding-bottom: 15% !important;
+  }
 }
 
 .equity-export-button {
@@ -240,6 +293,9 @@
     background-color: #008000;
     font-weight: 600;
     height: 40px !important;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
   }
 
   i {
@@ -251,6 +307,13 @@
   }
 }
 
+@media screen and (max-width: 400px) {
+  .user-logo-mobile {
+    width: 30% !important;
+    padding-bottom: 30% !important;
+  }
+}
+
 .section-filter {
   display: flex;
   align-items: center;
@@ -258,6 +321,7 @@
 
   .filter-name {
     padding-right: 10px;
+    font-size: 14px;
   }
 
   .filter-option {
@@ -278,6 +342,8 @@
   border-radius: 50%;
   color: white;
   float: right;
+  border: solid 1px white;
+
   span {
     position: absolute;
     top: 50%;
@@ -303,5 +369,47 @@
     background: none;
     border: none;
     padding: 0 0 0 5px;
+  }
+}
+
+.accordion-button::after,
+.user-option .dropdown-toggle::after {
+  display: none;
+}
+
+.accordion {
+  .collapsed {
+    .icon-sa-angles-down {
+      display: block;
+      margin-left: auto;
+    }
+    .icon-sa-angles-up {
+      display: none;
+    }
+  }
+
+  .icon-sa-angles-down {
+    display: none;
+  }
+  .icon-sa-angles-up {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+.pay-export-filter-mobile {
+  padding: 5px 0;
+
+  .filter-name {
+    color: white !important;
+    font-size: 14px;
+  }
+
+  .dropdown-toggle {
+    background-color: transparent !important;
+    color: white !important;
+    border: none;
+    font-weight: 700;
+    padding-right: 5px;
   }
 }
