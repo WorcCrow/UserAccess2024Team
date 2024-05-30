@@ -1,6 +1,7 @@
 $color-075484: #075484;
 $color-007dbc: #007dbc;
 $color-fff: #fff;
+$color-31d2f2: #31d2f2;
 
 .btn-right-0 {
   right: 0px;
@@ -9,8 +10,15 @@ $color-fff: #fff;
 .text-blue {
   color: $color-007dbc;
 }
+.text-dark-blue {
+  color: $color-075484;
+}
 .bg-white {
   background-color: $color-fff;
+}
+
+.bg-light-blue {
+  background-color: $color-31d2f2;
 }
 
 body,
@@ -27,4 +35,34 @@ html {
 
 .bg-primary {
   background-color: #075484 !important;
+}
+.custom-card .card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.custom-card .card-title:hover {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+}
+.custom-card .card-body a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.custom-card .card-body a:hover {
+  white-space: wrap;
+  overflow: visible;
+  text-overflow: clip;
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .custom-card .card-title {
+    font-size: 14px;
+  }
+  .custom-card .card-body span,
+  .custom-card .card-body p {
+    font-size: 12px;
+  }
 }

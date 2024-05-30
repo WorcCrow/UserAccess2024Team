@@ -1,0 +1,20 @@
+.icon-help {
+  width: 24px;
+  height: 24px;
+}
+.text-overflow-container {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.text-overflow {
+  display: inline-block;
+  width: calc(100% - 50px) !important;
+}
+.text-overflow:hover {
+  display: inline-block;
+  max-width: 100%;
+}

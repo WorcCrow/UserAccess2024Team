@@ -1,0 +1,13 @@
+.custom-dropdown .dropdown-menu {
+  width: 100%;
+  background-color: #31d2f2;
+}
+.custom-dropdown .dropdown-menu a {
+  width: 100%;
+  color: #075484;
+  font-weight: 700 !important;
+}
+.custom-dropdown .dropdown-toggle.btn.btn-info::after {
+  float: right;
+  margin-top: 10px;
+}
