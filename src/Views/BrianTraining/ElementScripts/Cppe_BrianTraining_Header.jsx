@@ -6,7 +6,7 @@ export default function Header() {
           <a href="#" className="navbar-brand">
             <img
               src="https://www.salary.com/research/Styles/Salary/img/salary-logo-reversed.svg"
-              class="sa-logo"
+              className="sa-logo"
               alt="Salary.com"
             />
           </a>

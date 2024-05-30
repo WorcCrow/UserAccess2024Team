@@ -8,7 +8,7 @@ export default function UserAccess() {
     <div className="sa-tmpl-dashboard">
       <Header />
       <div className="welcome-text">
-        <h2>Welcome Brian!</h2>
+        <h2>Welcome Ted!</h2>
       </div>
       <div className="row">
         <UserInfo />
